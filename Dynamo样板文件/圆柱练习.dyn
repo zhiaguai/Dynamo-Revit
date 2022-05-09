@@ -1,0 +1,1062 @@
+{
+  "Uuid": "3c9d0464-8643-5ffe-96e5-ab1769818209",
+  "IsCustomNode": false,
+  "Description": "",
+  "Name": "圆柱练习",
+  "ElementResolver": {
+    "ResolutionMap": {
+      "Point": {
+        "Key": "Autodesk.DesignScript.Geometry.Point",
+        "Value": "ProtoGeometry.dll"
+      },
+      "Color": {
+        "Key": "DSCore.Color",
+        "Value": "DSCoreNodes.dll"
+      }
+    }
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "CoreNodeModels.CreateList, CoreNodeModels",
+      "VariableInputPorts": true,
+      "NodeType": "ExtensionNode",
+      "Id": "922b47129632476b87cef8a17b80b8c0",
+      "Inputs": [
+        {
+          "Id": "206d14cf3afe47b6bf2d050c12d3ee20",
+          "Name": "item0",
+          "Description": "项索引 #0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "9f6f552fb48844fe9ba8dbf0861d2de4",
+          "Name": "item1",
+          "Description": "项目索引编号1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "161bb8c1b06c4bd3a3017ad479ce63f6",
+          "Name": "item2",
+          "Description": "项目索引编号2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "d22b87db046545d4a0469d15c4eb6c31",
+          "Name": "list",
+          "Description": "列表",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "使新列表超出给定输入内容"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.ColorRange, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "86899448c7fc4e15bf0ce6652715ae3f",
+      "Inputs": [
+        {
+          "Id": "7d166db7077b45a5a291d9d8d411b011",
+          "Name": "colors",
+          "Description": "要包含在范围内的颜色列表。",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "77344ac608cd4cf5ae9595a1658a488e",
+          "Name": "indices",
+          "Description": "列表中的值介于 0.0 和 1.0 之间，这些值沿范围定位输入颜色。.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "ae2f241ef66f4d239e18d777582216a8",
+          "Name": "value",
+          "Description": "列表中的值介于 0.0 和 1.0 之间。这些值将用于在范围内查找颜色。",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "36097a288d6a463ea63b072fd162d93f",
+          "Name": "color",
+          "Description": "选定的颜色。",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "获取给定颜色的颜色范围。"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "0.1;\n0.2;\n0.4;",
+      "Id": "3a8e3e37b2dd45908ad68440f1b9c0f9",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "c93b7750bf764a039ff6bba4ff53ec6c",
+          "Name": "",
+          "Description": "行 1 中的表达式值",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "fc15585bc4bc4efa82437e8a65b348a0",
+          "Name": "",
+          "Description": "行 2 中的表达式值",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "d2b89c87262849958274c988fc88ed1c",
+          "Name": "",
+          "Description": "行 3 中的表达式值",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "允许直接编写 DesignScript 代码"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.CreateList, CoreNodeModels",
+      "VariableInputPorts": true,
+      "NodeType": "ExtensionNode",
+      "Id": "be35bc90db1d4eab976e54f6d3a6c1ff",
+      "Inputs": [
+        {
+          "Id": "5b25e89fb86749a49e8a87095f655710",
+          "Name": "item0",
+          "Description": "项索引 #0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "14307f05e78d4751ab1663e1928d640d",
+          "Name": "item1",
+          "Description": "项目索引编号1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "02361bbc0c3a4b6b955663c11ec36399",
+          "Name": "item2",
+          "Description": "项目索引编号2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "d012760f73ce4cf5aa2a0e6f33f1115f",
+          "Name": "list",
+          "Description": "列表",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "使新列表超出给定输入内容"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.Color.ByARGB@int,int,int,int",
+      "Id": "f59ba50cb05b4ee783a1fd826c91fbd9",
+      "Inputs": [
+        {
+          "Id": "46f921a7726041b6b356001fedb4d1be",
+          "Name": "a",
+          "Description": "Alpha 值。\n\nint\n默认值 : 255",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "7670f55d6333482f9476b6d039812d8c",
+          "Name": "r",
+          "Description": "红色值。\n\nint\n默认值 : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "409cdc6d35ce4a6bb662b4041bf51676",
+          "Name": "g",
+          "Description": "绿色值。\n\nint\n默认值 : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "2d05fb6107b64283ae2ace81617b2518",
+          "Name": "b",
+          "Description": "蓝色值。\n\nint\n默认值 : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "75f37e32199c410886843833539abd21",
+          "Name": "color",
+          "Description": "颜色。",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "按 Alpha、红色、绿色和蓝色分量构造颜色。\n\nColor.ByARGB (a: int = 255, r: int = 0, g: int = 0, b: int = 0): Color"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "255;",
+      "Id": "ff9e6cf649124771a453d66a9bacb719",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "915789b6f0a64e9c81f37455ff44dfcf",
+          "Name": "",
+          "Description": "行 1 中的表达式值",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "允许直接编写 DesignScript 代码"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "72;",
+      "Id": "a017fde81c9f48289b468ecb20e93814",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "134fe0128b05425a871cbffe5cda67d8",
+          "Name": "",
+          "Description": "行 1 中的表达式值",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "允许直接编写 DesignScript 代码"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "73;",
+      "Id": "f5b62166b57f46889f853186521ed27b",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "af7534f3bcf14639a589cbe8ef166611",
+          "Name": "",
+          "Description": "行 1 中的表达式值",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "允许直接编写 DesignScript 代码"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Cylinder.ByPointsRadius@Autodesk.DesignScript.Geometry.Point,Autodesk.DesignScript.Geometry.Point,double",
+      "Id": "d5664779fbcb4b719f90b108f30cef97",
+      "Inputs": [
+        {
+          "Id": "e943d6f5af8744acbc088827de18c57e",
+          "Name": "startPoint",
+          "Description": "Point\n默认值 : Autodesk.DesignScript.Geometry.Point.ByCoordinates(0, 0, 0)",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "29f2afb9c27f48b99512a37085964c0e",
+          "Name": "endPoint",
+          "Description": "Point\n默认值 : Autodesk.DesignScript.Geometry.Point.ByCoordinates(0, 0, 1) (禁用)",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "1592d282c3594971b07a7b9ecb9057e3",
+          "Name": "radius",
+          "Description": "double\n默认值 : 1",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "18f2cd15a8db47d4930ed96dee898b78",
+          "Name": "Cylinder",
+          "Description": "Cylinder",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "通过给定圆柱体底部和顶部中心点构造实心圆柱体。\n\nCylinder.ByPointsRadius (startPoint: Point = Autodesk.DesignScript.Geometry.Point.ByCoordinates(0, 0, 0), endPoint: Point = Autodesk.DesignScript.Geometry.Point.ByCoordinates(0, 0, 1), radius: double = 1): Cylinder"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "2;",
+      "Id": "c2cef4ab71b6417c8b9418c3e7a3a63e",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "356f14b08f8044e08dc3eaec5ebb16fe",
+          "Name": "",
+          "Description": "行 1 中的表达式值",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "允许直接编写 DesignScript 代码"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "12;",
+      "Id": "506bd607ea2e4a10bd25a182ac386063",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "cc917b558a794e8e91ac23469bcccaeb",
+          "Name": "",
+          "Description": "行 1 中的表达式值",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "允许直接编写 DesignScript 代码"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Point.ByCoordinates@double,double,double",
+      "Id": "0fbaa6f07f9c4e52a7e3fa766c584bf0",
+      "Inputs": [
+        {
+          "Id": "52aacdaed9dc489c977d066eb50a9cde",
+          "Name": "x",
+          "Description": "double\n默认值 : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "7e02cb915ac8487a8c8a04557df91ef2",
+          "Name": "y",
+          "Description": "double\n默认值 : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "495e0d73e4274e6890be022cb42fd1c5",
+          "Name": "z",
+          "Description": "double\n默认值 : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "4065bcd26f6b486aa7c85be1d2f1df64",
+          "Name": "Point",
+          "Description": "Point",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "通过给定的 3 个笛卡尔坐标形成一个点\n\nPoint.ByCoordinates (x: double = 0, y: double = 0, z: double = 0): Point"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Geometry.Translate@double,double,double",
+      "Id": "07be345a840346d996a12721e0f42f31",
+      "Inputs": [
+        {
+          "Id": "506beb9d9b9e478d9f65065661b30e85",
+          "Name": "geometry",
+          "Description": "Autodesk.DesignScript.Geometry.Geometry",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "0f55408b55364a329e2c644b97bb0269",
+          "Name": "xTranslation",
+          "Description": "沿 X 轴的位移。\n\ndouble\n默认值 : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "9981669f7333434dbd8d59738c815acf",
+          "Name": "yTranslation",
+          "Description": "沿 Y 轴的位移。\n\ndouble\n默认值 : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "f4ae41c61ce34117a5d4528c6683a104",
+          "Name": "zTranslation",
+          "Description": "沿 Z 轴的位移。\n\ndouble\n默认值 : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "3e87abb09e0d440ba86ccad00709b4be",
+          "Name": "Geometry",
+          "Description": "已变换的几何图形。",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "CrossProduct",
+      "Description": "将任意几何图形按给定位移朝 WCS 中分别定义的 X、Y、Z 方向 平移。\n\nGeometry.Translate (xTranslation: double = 0, yTranslation: double = 0, zTranslation: double = 0): Geometry"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "0;\n50;\n4;",
+      "Id": "ac6e241f245146afa85dadb580c1bffc",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "dea1f902891d4300a73d1a439328f113",
+          "Name": "",
+          "Description": "行 1 中的表达式值",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "e145398491434ca4952b4f3c50995f9f",
+          "Name": "",
+          "Description": "行 2 中的表达式值",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "158a8a328f784503b7d8f66efdfacfed",
+          "Name": "",
+          "Description": "行 3 中的表达式值",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "允许直接编写 DesignScript 代码"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Range, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "da60dbf7b98d49b1a61783785b6bd801",
+      "Inputs": [
+        {
+          "Id": "4c3ce9b43fda44648028b5c8371bc0ad",
+          "Name": "start",
+          "Description": "序列开始的数字或字母\r\n默认值：0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "07b657c827c24f479cece516118440a6",
+          "Name": "end",
+          "Description": "序列结束的数字或字母\r\n默认值：9",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "912665cdaa9447db8362878f4cb3c2dc",
+          "Name": "step",
+          "Description": "数字或字母之间的空间\r\n默认值：1",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "c1632c8500254ca7be2662f77dd4dda9",
+          "Name": "seq",
+          "Description": "新建序列",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "按指定范围创建一系列数字或字母。"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "color=Color.ByARGB(255,177,105,90);",
+      "Id": "c8b07743a16d4dcdbb0eaf91a8955b53",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "114d5fa42611440d9d2cc824976cd36f",
+          "Name": "",
+          "Description": "color",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "允许直接编写 DesignScript 代码"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "color=Color.ByARGB(255,219,152,100);",
+      "Id": "b1d1333e660b4647a194bb98ee854494",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "fa2e6c3503bc498481f509fb46e21b21",
+          "Name": "",
+          "Description": "color",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "允许直接编写 DesignScript 代码"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Modifiers.GeometryColor.ByGeometryColor@Autodesk.DesignScript.Geometry.Geometry,DSCore.Color",
+      "Id": "741210568e864a16942046bdbdcd671b",
+      "Inputs": [
+        {
+          "Id": "6ad71b2a31724a528cc39284db7ddb07",
+          "Name": "geometry",
+          "Description": "Geometry",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "94e06c86aa8e452199177cca333d415c",
+          "Name": "color",
+          "Description": "Color",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "9cd31aab7dd540a28e6118d869618918",
+          "Name": "GeometryColor",
+          "Description": "GeometryColor",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "CrossProduct",
+      "Description": "GeometryColor.ByGeometryColor (geometry: Geometry, color: Color): GeometryColor"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "d22b87db046545d4a0469d15c4eb6c31",
+      "End": "7d166db7077b45a5a291d9d8d411b011",
+      "Id": "50fc86c6f0524dcc8179f72b473443f0"
+    },
+    {
+      "Start": "36097a288d6a463ea63b072fd162d93f",
+      "End": "94e06c86aa8e452199177cca333d415c",
+      "Id": "c0309191c39748b2963cd524c0ab5885"
+    },
+    {
+      "Start": "c93b7750bf764a039ff6bba4ff53ec6c",
+      "End": "5b25e89fb86749a49e8a87095f655710",
+      "Id": "fbea07ac06e241e3b760999c771d6260"
+    },
+    {
+      "Start": "fc15585bc4bc4efa82437e8a65b348a0",
+      "End": "14307f05e78d4751ab1663e1928d640d",
+      "Id": "e885b26a49d84387b5754955ad6c036f"
+    },
+    {
+      "Start": "d2b89c87262849958274c988fc88ed1c",
+      "End": "02361bbc0c3a4b6b955663c11ec36399",
+      "Id": "fc581ce8d3fc43d48774d6638061c91f"
+    },
+    {
+      "Start": "d012760f73ce4cf5aa2a0e6f33f1115f",
+      "End": "77344ac608cd4cf5ae9595a1658a488e",
+      "Id": "2d074ddfa05842e39e883c998f49caf9"
+    },
+    {
+      "Start": "d012760f73ce4cf5aa2a0e6f33f1115f",
+      "End": "ae2f241ef66f4d239e18d777582216a8",
+      "Id": "ef10b11604574e24b58d9b13a91737ea"
+    },
+    {
+      "Start": "75f37e32199c410886843833539abd21",
+      "End": "206d14cf3afe47b6bf2d050c12d3ee20",
+      "Id": "24d3c9c2894545e691e1ab604a601feb"
+    },
+    {
+      "Start": "915789b6f0a64e9c81f37455ff44dfcf",
+      "End": "7670f55d6333482f9476b6d039812d8c",
+      "Id": "9a1b8190c95b4b2eaab856bf82b45fb4"
+    },
+    {
+      "Start": "134fe0128b05425a871cbffe5cda67d8",
+      "End": "409cdc6d35ce4a6bb662b4041bf51676",
+      "Id": "a6983017acd04dacacbde2d7390ff255"
+    },
+    {
+      "Start": "af7534f3bcf14639a589cbe8ef166611",
+      "End": "2d05fb6107b64283ae2ace81617b2518",
+      "Id": "3f385d21d24f4ff58052a673a7719888"
+    },
+    {
+      "Start": "18f2cd15a8db47d4930ed96dee898b78",
+      "End": "506beb9d9b9e478d9f65065661b30e85",
+      "Id": "2c502c628f1e426b8eb252d47565130c"
+    },
+    {
+      "Start": "356f14b08f8044e08dc3eaec5ebb16fe",
+      "End": "1592d282c3594971b07a7b9ecb9057e3",
+      "Id": "93b44c36310f4efdb6cc8d7d624acb09"
+    },
+    {
+      "Start": "cc917b558a794e8e91ac23469bcccaeb",
+      "End": "495e0d73e4274e6890be022cb42fd1c5",
+      "Id": "246177150ef947099afeefc73fe10f6f"
+    },
+    {
+      "Start": "4065bcd26f6b486aa7c85be1d2f1df64",
+      "End": "29f2afb9c27f48b99512a37085964c0e",
+      "Id": "1b9b64fdf4b44e56ae738dda0e0ed514"
+    },
+    {
+      "Start": "3e87abb09e0d440ba86ccad00709b4be",
+      "End": "6ad71b2a31724a528cc39284db7ddb07",
+      "Id": "b88ec55733cf4c188441209173672a0e"
+    },
+    {
+      "Start": "dea1f902891d4300a73d1a439328f113",
+      "End": "4c3ce9b43fda44648028b5c8371bc0ad",
+      "Id": "a52c5980168d4452a28107d00883d607"
+    },
+    {
+      "Start": "e145398491434ca4952b4f3c50995f9f",
+      "End": "07b657c827c24f479cece516118440a6",
+      "Id": "3fd5e5009fc842a49fb7bc05b5d4876a"
+    },
+    {
+      "Start": "158a8a328f784503b7d8f66efdfacfed",
+      "End": "912665cdaa9447db8362878f4cb3c2dc",
+      "Id": "ca6b7949e9864045a5b50b63dfcdc15c"
+    },
+    {
+      "Start": "c1632c8500254ca7be2662f77dd4dda9",
+      "End": "0f55408b55364a329e2c644b97bb0269",
+      "Id": "b679f7a7acd549988591d295fe7af3a3"
+    },
+    {
+      "Start": "c1632c8500254ca7be2662f77dd4dda9",
+      "End": "9981669f7333434dbd8d59738c815acf",
+      "Id": "f600efd9b0c54affb1463c97f83af243"
+    },
+    {
+      "Start": "114d5fa42611440d9d2cc824976cd36f",
+      "End": "9f6f552fb48844fe9ba8dbf0861d2de4",
+      "Id": "87009bf1df1840d7a2e64ab4efbb9378"
+    },
+    {
+      "Start": "fa2e6c3503bc498481f509fb46e21b21",
+      "End": "161bb8c1b06c4bd3a3017ad479ce63f6",
+      "Id": "b0d0ecdd8b9441c4a7b811d1f07e2298"
+    }
+  ],
+  "Dependencies": [],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.0.0.4654",
+      "RunType": "Automatic",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "背景预览",
+      "EyeX": -5.9053888190713835,
+      "EyeY": 64.595190966032817,
+      "EyeZ": 72.777197358225251,
+      "LookX": 18.714568401983129,
+      "LookY": -56.204637664163037,
+      "LookZ": -86.636126631013013,
+      "UpX": 0.072215310691816664,
+      "UpY": 0.93969262078591242,
+      "UpZ": -0.33430932882914793
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "List.Create",
+        "Id": "922b47129632476b87cef8a17b80b8c0",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 524.38187621869042,
+        "Y": 99.321679596582044
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Color Range",
+        "Id": "86899448c7fc4e15bf0ce6652715ae3f",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 772.6773751462224,
+        "Y": 155.68615612370803
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "3a8e3e37b2dd45908ad68440f1b9c0f9",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 520.09864985402942,
+        "Y": 326.12490939213
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "List.Create",
+        "Id": "be35bc90db1d4eab976e54f6d3a6c1ff",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 613.64839352894012,
+        "Y": 283.19600246577312
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Color.ByARGB",
+        "Id": "f59ba50cb05b4ee783a1fd826c91fbd9",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 278.63141727029824,
+        "Y": 147.122591246399
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "ff9e6cf649124771a453d66a9bacb719",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 187.28415294278989,
+        "Y": 149.00247796127502
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "a017fde81c9f48289b468ecb20e93814",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 116.68675041457641,
+        "Y": 206.24889431107601
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "f5b62166b57f46889f853186521ed27b",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 156.1614564815178,
+        "Y": 269.95266070341904
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Cylinder.ByPointsRadius",
+        "Id": "d5664779fbcb4b719f90b108f30cef97",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 150.751251030326,
+        "Y": -203.576348237974
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "c2cef4ab71b6417c8b9418c3e7a3a63e",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -16.920978367826592,
+        "Y": -14.529974061820283
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "506bd607ea2e4a10bd25a182ac386063",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -197.32591913984706,
+        "Y": -142.60482607068
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Point.ByCoordinates",
+        "Id": "0fbaa6f07f9c4e52a7e3fa766c584bf0",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -94.5420236424757,
+        "Y": -153.521169425795
+      },
+      {
+        "ShowGeometry": false,
+        "Name": "Geometry.Translate",
+        "Id": "07be345a840346d996a12721e0f42f31",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 692.45845651917,
+        "Y": -227.705946261864
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "ac6e241f245146afa85dadb580c1bffc",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 390.131779097443,
+        "Y": -135.962014312283
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Range",
+        "Id": "da60dbf7b98d49b1a61783785b6bd801",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 483.790133844821,
+        "Y": -136.710922827264
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "c8b07743a16d4dcdbb0eaf91a8955b53",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 84.310449013297443,
+        "Y": 360.73572033174804
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "b1d1333e660b4647a194bb98ee854494",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 83.64650404011843,
+        "Y": 448.817114769559
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "GeometryColor.ByGeometryColor",
+        "Id": "741210568e864a16942046bdbdcd671b",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1196.9035652133894,
+        "Y": -22.11156141163687
+      }
+    ],
+    "Annotations": [
+      {
+        "Id": "5e2053083d0e4984a83717fea9f2737e",
+        "Title": "复制多个圆柱",
+        "Nodes": [
+          "07be345a840346d996a12721e0f42f31",
+          "ac6e241f245146afa85dadb580c1bffc",
+          "da60dbf7b98d49b1a61783785b6bd801"
+        ],
+        "Left": 380.131779097443,
+        "Top": -257.705946261864,
+        "Width": 576.326677421727,
+        "Height": 265.99502343460006,
+        "FontSize": 14.0,
+        "InitialTop": -227.705946261864,
+        "InitialHeight": 209.161354073229,
+        "TextblockHeight": 20.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "2af6126e4a8e4c499a4302462341ae2a",
+        "Title": "色彩创建",
+        "Nodes": [
+          "922b47129632476b87cef8a17b80b8c0",
+          "86899448c7fc4e15bf0ce6652715ae3f",
+          "3a8e3e37b2dd45908ad68440f1b9c0f9",
+          "be35bc90db1d4eab976e54f6d3a6c1ff",
+          "f59ba50cb05b4ee783a1fd826c91fbd9",
+          "ff9e6cf649124771a453d66a9bacb719",
+          "a017fde81c9f48289b468ecb20e93814",
+          "f5b62166b57f46889f853186521ed27b",
+          "c8b07743a16d4dcdbb0eaf91a8955b53",
+          "b1d1333e660b4647a194bb98ee854494"
+        ],
+        "Left": 73.64650404011843,
+        "Top": 60.321679596582044,
+        "Width": 1005.030871106104,
+        "Height": 481.49543517297695,
+        "FontSize": 24.0,
+        "InitialTop": 99.321679596582044,
+        "InitialHeight": 472.495435172977,
+        "TextblockHeight": 29.0,
+        "Background": "#FFFF7BAC"
+      },
+      {
+        "Id": "5782a66b0cd1451988996ad20a1d5b3d",
+        "Title": "给几何图上色",
+        "Nodes": [],
+        "Left": 1237.79685096381,
+        "Top": -77.4297203018491,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      }
+    ],
+    "X": 277.74279766282177,
+    "Y": 247.15352832749451,
+    "Zoom": 0.76224437763874031
+  }
+}

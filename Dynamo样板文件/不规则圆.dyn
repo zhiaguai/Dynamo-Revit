@@ -1,0 +1,644 @@
+{
+  "Uuid": "17543d6a-d56e-46fb-a5a7-d34f1c49000c",
+  "IsCustomNode": false,
+  "Description": null,
+  "Name": "Home",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "1..50..5;",
+      "Id": "358747b333064cc0bfde0570c61bbc72",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "312de0d23bd5475496c425e048fb6dee",
+          "Name": "",
+          "Description": "行 1 中的表达式值",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "允许直接编写 DesignScript 代码"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Point.ByCoordinates@double,double,double",
+      "Id": "c92f3874ea2a4fb0901517efb53ac56d",
+      "Inputs": [
+        {
+          "Id": "99f337b0ba5745cb9c5bc21d09d6d636",
+          "Name": "x",
+          "Description": "double\n默认值 : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "41a18baf3b1e4a88a43e25f78f835612",
+          "Name": "y",
+          "Description": "double\n默认值 : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "1f39e71968334187aafdc04819b579ba",
+          "Name": "z",
+          "Description": "double\n默认值 : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "50f13f57e7c04c86af1371d749d033b4",
+          "Name": "Point",
+          "Description": "Point",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "通过给定的 3 个笛卡尔坐标形成一个点\n\nPoint.ByCoordinates (x: double = 0, y: double = 0, z: double = 0): Point"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.DoubleSlider, CoreNodeModels",
+      "NodeType": "NumberInputNode",
+      "NumberType": "Double",
+      "MaximumValue": 100.0,
+      "MinimumValue": 0.0,
+      "StepValue": 0.1,
+      "InputValue": 9.2000000000000011,
+      "Id": "8c9f42e4ecda4a8cb7e2dc1c409ac946",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "028a9fa18f174ca3ae94e6991b09acec",
+          "Name": "",
+          "Description": "Double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "用于生成数字值的滑块。"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.DoubleSlider, CoreNodeModels",
+      "NodeType": "NumberInputNode",
+      "NumberType": "Double",
+      "MaximumValue": 100.0,
+      "MinimumValue": 0.0,
+      "StepValue": 0.1,
+      "InputValue": 20.400000000000002,
+      "Id": "783c3f0a5ede40d0930f679e96fd33b6",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "311d845a44284e1b82d8b1e20ac1ff83",
+          "Name": "",
+          "Description": "Double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "用于生成数字值的滑块。"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Point.ByCoordinates@double,double,double",
+      "Id": "a50a8ee706914675a31dfb88f38d30cd",
+      "Inputs": [
+        {
+          "Id": "ffb99a80a69349edad1b4fda01583126",
+          "Name": "x",
+          "Description": "double\n默认值 : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "1931ea3a1cac40e2adc8b5a87105154c",
+          "Name": "y",
+          "Description": "double\n默认值 : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "6f1f9dd9cad44e96ac429c62b0a180ce",
+          "Name": "z",
+          "Description": "double\n默认值 : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "10ca986c58a54b9ab82949f69afea02d",
+          "Name": "Point",
+          "Description": "Point",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "通过给定的 3 个笛卡尔坐标形成一个点\n\nPoint.ByCoordinates (x: double = 0, y: double = 0, z: double = 0): Point"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Circle.ByCenterPointRadius@Autodesk.DesignScript.Geometry.Point,double",
+      "Id": "5431b624a9704d1d9d7ebeb43853f24c",
+      "Inputs": [
+        {
+          "Id": "76db46b055f742aea52c4768ace70099",
+          "Name": "centerPoint",
+          "Description": "Point\n默认值 : Autodesk.DesignScript.Geometry.Point.ByCoordinates(0, 0, 0)",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "98d6c3f9863e491ebac72294dd94dfe7",
+          "Name": "radius",
+          "Description": "double\n默认值 : 1",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "3db08804e349435b9c926914856df051",
+          "Name": "Circle",
+          "Description": "Circle",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "以世界坐标系 Z 轴为法线通过在世界坐标系 XY 平面输入圆心和半径创建圆。\n\nCircle.ByCenterPointRadius (centerPoint: Point = Autodesk.DesignScript.Geometry.Point.ByCoordinates(0, 0, 0), radius: double = 1): Circle"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Geometry.DistanceTo@Autodesk.DesignScript.Geometry.Geometry",
+      "Id": "0e6221f212c84ac48de4b8506082943a",
+      "Inputs": [
+        {
+          "Id": "11e88a0b7bbe454994f2cd59cf6f9eff",
+          "Name": "geometry",
+          "Description": "Autodesk.DesignScript.Geometry.Geometry",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "d7821bca687d46b699ef268de2cd8787",
+          "Name": "other",
+          "Description": "其他几何图形\n\nGeometry",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "b9819a0ced784160b8ccff72650e2e17",
+          "Name": "double",
+          "Description": "距离",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "获取从该几何图形到另一几何图形的距离\n\nGeometry.DistanceTo (other: Geometry): double"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.DoubleSlider, CoreNodeModels",
+      "NodeType": "NumberInputNode",
+      "NumberType": "Double",
+      "MaximumValue": 100.0,
+      "MinimumValue": 0.0,
+      "StepValue": 0.1,
+      "InputValue": 5.9,
+      "Id": "6b0903364bd046f696b974de8005f6aa",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "2c27b0fcee4243578cd6294726228f4b",
+          "Name": "",
+          "Description": "Double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "用于生成数字值的滑块。"
+    },
+    {
+      "ConcreteType": "Watch3DNodeModels.Watch3D, Watch3DNodeModels",
+      "WatchWidth": 200.0,
+      "WatchHeight": 200.0,
+      "WasExecuted": true,
+      "Camera": {
+        "Name": "70f504b4-11a8-4fe8-bec6-b2675f8323ad Preview",
+        "EyeX": 8.729596876711307,
+        "EyeY": 8.8530746791403736,
+        "EyeZ": 7.3538843250564057,
+        "LookX": 2.2774874054769487,
+        "LookY": -2.4672780226000324,
+        "LookZ": -11.0078557931386,
+        "UpX": 0.0,
+        "UpY": 1.0,
+        "UpZ": 0.0
+      },
+      "NodeType": "ExtensionNode",
+      "Id": "70f504b411a84fe8bec6b2675f8323ad",
+      "Inputs": [
+        {
+          "Id": "9c4c9536d9754146a2481e78b0d22616",
+          "Name": "",
+          "Description": "传入的几何图形对象。",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "df96fc1195c54e10ac1653922df93d6d",
+          "Name": "",
+          "Description": "传入的几何图形对象。",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "显示几何图形的动态预览。"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "x/y;",
+      "Id": "37e84385029d42b080aed6adf1826dd3",
+      "Inputs": [
+        {
+          "Id": "9b953d2f5ca04ebebb9608d28e4d4627",
+          "Name": "x",
+          "Description": "x",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "ea80b8259c31461a8b8866cfd01e8ea8",
+          "Name": "y",
+          "Description": "y",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "05df012405bc412bbc6098d729002691",
+          "Name": "",
+          "Description": "行 1 中的表达式值",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "允许直接编写 DesignScript 代码"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "312de0d23bd5475496c425e048fb6dee",
+      "End": "99f337b0ba5745cb9c5bc21d09d6d636",
+      "Id": "f4c0aaef04c8486a8c68737b67c0ce20"
+    },
+    {
+      "Start": "312de0d23bd5475496c425e048fb6dee",
+      "End": "41a18baf3b1e4a88a43e25f78f835612",
+      "Id": "053cebe55a8544238f147a1d77a2c675"
+    },
+    {
+      "Start": "50f13f57e7c04c86af1371d749d033b4",
+      "End": "76db46b055f742aea52c4768ace70099",
+      "Id": "1091ec253cbd414fbe0382b4fbb377ad"
+    },
+    {
+      "Start": "50f13f57e7c04c86af1371d749d033b4",
+      "End": "11e88a0b7bbe454994f2cd59cf6f9eff",
+      "Id": "37fff8697a75464587f0b8df15a104ab"
+    },
+    {
+      "Start": "028a9fa18f174ca3ae94e6991b09acec",
+      "End": "ffb99a80a69349edad1b4fda01583126",
+      "Id": "4fb44f283ac4431d9af07c4fdc8983f2"
+    },
+    {
+      "Start": "311d845a44284e1b82d8b1e20ac1ff83",
+      "End": "1931ea3a1cac40e2adc8b5a87105154c",
+      "Id": "d2396a062a384dd58b868e9fb2319c4c"
+    },
+    {
+      "Start": "10ca986c58a54b9ab82949f69afea02d",
+      "End": "d7821bca687d46b699ef268de2cd8787",
+      "Id": "c32ba0a9e21d4131b4cd4219f4f3d1c0"
+    },
+    {
+      "Start": "3db08804e349435b9c926914856df051",
+      "End": "9c4c9536d9754146a2481e78b0d22616",
+      "Id": "27174ea86d59433987524b5feee98fd4"
+    },
+    {
+      "Start": "b9819a0ced784160b8ccff72650e2e17",
+      "End": "9b953d2f5ca04ebebb9608d28e4d4627",
+      "Id": "e1862779516b4d9f93b9a514b1cbaa44"
+    },
+    {
+      "Start": "2c27b0fcee4243578cd6294726228f4b",
+      "End": "ea80b8259c31461a8b8866cfd01e8ea8",
+      "Id": "31995c78111b4890b2e4727cb05a4697"
+    },
+    {
+      "Start": "05df012405bc412bbc6098d729002691",
+      "End": "98d6c3f9863e491ebac72294dd94dfe7",
+      "Id": "cd1b01e2de50462bb72fde677189f338"
+    }
+  ],
+  "Dependencies": [],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.0.3.8810",
+      "RunType": "Automatic",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "背景预览",
+      "EyeX": 0.96956166307836256,
+      "EyeY": 11.710748527752543,
+      "EyeZ": 20.383702473339813,
+      "LookX": 5.1689738407099979,
+      "LookY": -5.5997216607691715,
+      "LookZ": -24.983373563431673,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "358747b333064cc0bfde0570c61bbc72",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 49.814219238477961,
+        "Y": 113.67221756012179
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Point.ByCoordinates",
+        "Id": "c92f3874ea2a4fb0901517efb53ac56d",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 183.30484097686013,
+        "Y": 114.38238007181917
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Number Slider",
+        "Id": "8c9f42e4ecda4a8cb7e2dc1c409ac946",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -31.9428856623112,
+        "Y": 486.32654661890871
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Number Slider",
+        "Id": "783c3f0a5ede40d0930f679e96fd33b6",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -34.265129426490773,
+        "Y": 545.07460754814861
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Point.ByCoordinates",
+        "Id": "a50a8ee706914675a31dfb88f38d30cd",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 309.16595529008305,
+        "Y": 485.84531898163442
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Circle.ByCenterPointRadius",
+        "Id": "5431b624a9704d1d9d7ebeb43853f24c",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 960.88166945738453,
+        "Y": 112.44520289524758
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Geometry.DistanceTo",
+        "Id": "0e6221f212c84ac48de4b8506082943a",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 542.58468007607871,
+        "Y": 160.56254279254026
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Number Slider",
+        "Id": "6b0903364bd046f696b974de8005f6aa",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 558.45387483796583,
+        "Y": 488.38958474957269
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Watch 3D",
+        "Id": "70f504b411a84fe8bec6b2675f8323ad",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1214.9290225718983,
+        "Y": 109.75537323375039
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "37e84385029d42b080aed6adf1826dd3",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 882.34776460496937,
+        "Y": 311.87817829381
+      }
+    ],
+    "Annotations": [
+      {
+        "Id": "9080ca3fd86e4deba456669ae38b2282",
+        "Title": "笛卡尔形成多个point",
+        "Nodes": [
+          "358747b333064cc0bfde0570c61bbc72"
+        ],
+        "Left": 39.814219238477961,
+        "Top": 82.0722175601218,
+        "Width": 177.77666666666667,
+        "Height": 124.19999999999999,
+        "FontSize": 18.0,
+        "InitialTop": 113.67221756012179,
+        "InitialHeight": 145.0,
+        "TextblockHeight": 21.6,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "475e10e727a54292ba69d573fa43d283",
+        "Title": "点到点的距离",
+        "Nodes": [
+          "0e6221f212c84ac48de4b8506082943a"
+        ],
+        "Left": 532.58468007607871,
+        "Top": 128.96254279254026,
+        "Width": 239.2,
+        "Height": 149.8,
+        "FontSize": 18.0,
+        "InitialTop": 160.56254279254026,
+        "InitialHeight": 148.2,
+        "TextblockHeight": 21.6,
+        "Background": "#FFFFB8D8"
+      },
+      {
+        "Id": "0778d4f603434909a4a096493f864680",
+        "Title": "生成圆，确定中心点确定半径",
+        "Nodes": [
+          "5431b624a9704d1d9d7ebeb43853f24c"
+        ],
+        "Left": 950.88166945738453,
+        "Top": 80.845202895247581,
+        "Width": 244.00000000000003,
+        "Height": 149.8,
+        "FontSize": 18.0,
+        "InitialTop": 112.44520289524758,
+        "InitialHeight": 148.2,
+        "TextblockHeight": 21.6,
+        "Background": "#FFA4E1FF"
+      },
+      {
+        "Id": "0f65dce26c2c456793627bee5ebf9a7c",
+        "Title": "码组；生成不规则圆形",
+        "Nodes": [
+          "37e84385029d42b080aed6adf1826dd3"
+        ],
+        "Left": 872.34776460496937,
+        "Top": 280.27817829380996,
+        "Width": 190.0,
+        "Height": 133.8,
+        "FontSize": 18.0,
+        "InitialTop": 311.87817829381,
+        "InitialHeight": 132.2,
+        "TextblockHeight": 21.6,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "b1cb0886cfe94297be23534cc7082d16",
+        "Title": "watch3D查看",
+        "Nodes": [
+          "70f504b411a84fe8bec6b2675f8323ad"
+        ],
+        "Left": 1204.9290225718983,
+        "Top": 78.1553732337504,
+        "Width": 229.6,
+        "Height": 309.0,
+        "FontSize": 18.0,
+        "InitialTop": 109.75537323375039,
+        "InitialHeight": 307.4,
+        "TextblockHeight": 21.6,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "c694e05a4a4a445f997556c4d4269dc7",
+        "Title": "给出点集合列表",
+        "Nodes": [],
+        "Left": 16.002206177383584,
+        "Top": 280.15558868279044,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      }
+    ],
+    "X": 43.805211868413608,
+    "Y": 25.29515272461876,
+    "Zoom": 0.78473795248621614
+  }
+}
