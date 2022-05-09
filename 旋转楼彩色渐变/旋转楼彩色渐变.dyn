@@ -1,0 +1,649 @@
+{
+  "Uuid": "27b5109e-0809-4778-821a-dd6625aa686c",
+  "IsCustomNode": false,
+  "Description": null,
+  "Name": "Home",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "CoreNodeModels.Input.ColorPalette, CoreNodeModels",
+      "InputValue": {
+        "R": 148,
+        "G": 0,
+        "B": 211,
+        "A": 255
+      },
+      "NodeType": "ColorInputNode",
+      "Id": "5064a1d56c6648d8bab7d0aa87a71127",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "eadee75026194ca6972bf38f0f57b068",
+          "Name": "Color",
+          "Description": "Selected Color.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "从选项板中选择颜色"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.ColorRange, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "5a14b537da2f4f8490bf9c2e2eb95511",
+      "Inputs": [
+        {
+          "Id": "ac37467ad4df4fa9beec05d300082a81",
+          "Name": "colors",
+          "Description": "要包含在范围内的颜色列表。",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "b2b0760b117e497aa1d352573c618955",
+          "Name": "indices",
+          "Description": "列表中的值介于 0.0 和 1.0 之间，这些值沿范围定位输入颜色。.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "3226ec6dbf6f40c9b9ade7b0945de213",
+          "Name": "value",
+          "Description": "列表中的值介于 0.0 和 1.0 之间。这些值将用于在范围内查找颜色。",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "a2bdbf8101d947188941792b68e0dfbd",
+          "Name": "color",
+          "Description": "选定的颜色。",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "获取给定颜色的颜色范围。"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.ColorPalette, CoreNodeModels",
+      "InputValue": {
+        "R": 255,
+        "G": 127,
+        "B": 80,
+        "A": 255
+      },
+      "NodeType": "ColorInputNode",
+      "Id": "cac6231a796a49ffa6b63fcfea083b15",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "3539b1ec29944d63a9f916d67874cac5",
+          "Name": "Color",
+          "Description": "Selected Color.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "从选项板中选择颜色"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.CreateList, CoreNodeModels",
+      "VariableInputPorts": true,
+      "NodeType": "ExtensionNode",
+      "Id": "2383e789ccc54aeead8ded9298d73d96",
+      "Inputs": [
+        {
+          "Id": "bf69cf18293e40038928d2c3c6f26453",
+          "Name": "item0",
+          "Description": "项索引 #0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "2ea905a7109d4448b6ffc8450d6e637a",
+          "Name": "item1",
+          "Description": "项目索引编号1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "5c8e651a630c4951bd07bb3656cda32e",
+          "Name": "list",
+          "Description": "列表",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "使新列表超出给定输入内容"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "2000;",
+      "Id": "fd8124600a284337912642d6bed12c55",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "6a7cda13307c4919aeb313125918afa2",
+          "Name": "",
+          "Description": "行 1 中的表达式值",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "允许直接编写 DesignScript 代码"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Sequence, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "0c812cc34abb4f8592268f30ee3fd055",
+      "Inputs": [
+        {
+          "Id": "8edc33f36fff46fc96d9c414fb3ee96e",
+          "Name": "start",
+          "Description": "序列开始的数字或字母\r\n默认值：0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "5931186345a24f5dbd276f9098e34b42",
+          "Name": "amount",
+          "Description": "序列中数字的数量\r\n默认值：10",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "0f393089c6cd4888aee54fcd8cffd235",
+          "Name": "step",
+          "Description": "数字或字母之间的空间\r\n默认值：1",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "5516b276c6f84aaf927e168766cb87da",
+          "Name": "seq",
+          "Description": "新建序列",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "创建数字序列。"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "[0,1];",
+      "Id": "b715c0230d2b475d972a5387d35ffe72",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "e152cc9bed2847ccab518ebfccc9e73e",
+          "Name": "",
+          "Description": "行 1 中的表达式值",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "允许直接编写 DesignScript 代码"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "/@var[]..[],var[]..[]",
+      "Id": "8c48b00a973749a7a586934b7af8e618",
+      "Inputs": [
+        {
+          "Id": "83d812a6e8ab4af98411694999f96f29",
+          "Name": "x",
+          "Description": "x 值。\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "3a06151fd59041ae842b2e511cb509cd",
+          "Name": "y",
+          "Description": "y 值。\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "e308782a466043859467fdbbec035b63",
+          "Name": "var[]..[]",
+          "Description": "var[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "x 除以 y。\n\n/ (x: var[]..[], y: var[]..[]): var[]..[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.List.MaximumItem@var[]",
+      "Id": "b130125297c9479c889bbeda2ea07275",
+      "Inputs": [
+        {
+          "Id": "d2fc79206c75470d93018a75c52475ae",
+          "Name": "list",
+          "Description": "要用于获取最大值的列表。\n\nvar[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "d8d94d16f80640f2a72be9060613cb2e",
+          "Name": "max",
+          "Description": "列表的最大值。",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "返回列表的最大值。\n\nList.MaximumItem (list: var[]): var[]..[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Revit.Elements.Element.OverrideColorInView@DSCore.Color",
+      "Id": "724f39121aca4b938fe64f30dcfff50c",
+      "Inputs": [
+        {
+          "Id": "b4e6ea9506d040959392fc7ade254dcf",
+          "Name": "element",
+          "Description": "Revit.Elements.Element",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "90b5d4c530eb452d85d6ea81a726054e",
+          "Name": "color",
+          "Description": "将颜色应用到图元的实体填充。\n\nColor",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "849630440ab347d0a913470523be4bab",
+          "Name": "Element",
+          "Description": "Element",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "在活动视图中覆盖图元的颜色。\n\nElement.OverrideColorInView (color: Color): Element"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Revit.Elements.CurtainPanel.ByElement@Revit.Elements.Element",
+      "Id": "d8a492eb6d0e4370862b636401c6797c",
+      "Inputs": [
+        {
+          "Id": "ce791bfbbc69475eaf6f8d72e17ac877",
+          "Name": "hostingElement",
+          "Description": "Element",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "ae8f53a5956c48cea9edbbcc79fe4419",
+          "Name": "CurtainPanel[]",
+          "Description": "CurtainPanel[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "获取幕墙、系统或玻璃斜屋顶的所有嵌板\n\nCurtainPanel.ByElement (hostingElement: Element): CurtainPanel[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Nodes.DSModelElementSelection, DSRevitNodesUI",
+      "NodeType": "ExtensionNode",
+      "InstanceId": [
+        "dac5d094-5193-479c-8f9d-2e30038bf716-000316a8"
+      ],
+      "Id": "51f7b01c3c4c42278eda93406236ce68",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "dc0b9a974b2b48099e1e4b7b836bb7fe",
+          "Name": "Element",
+          "Description": "选定的元素。",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "eadee75026194ca6972bf38f0f57b068",
+      "End": "bf69cf18293e40038928d2c3c6f26453",
+      "Id": "7047633289b948158a5c06c098a0a7b0"
+    },
+    {
+      "Start": "a2bdbf8101d947188941792b68e0dfbd",
+      "End": "90b5d4c530eb452d85d6ea81a726054e",
+      "Id": "15d39dc8543c41a8a9e3104840d966a2"
+    },
+    {
+      "Start": "3539b1ec29944d63a9f916d67874cac5",
+      "End": "2ea905a7109d4448b6ffc8450d6e637a",
+      "Id": "81e9e127a9264fb5898561c8307a346f"
+    },
+    {
+      "Start": "5c8e651a630c4951bd07bb3656cda32e",
+      "End": "ac37467ad4df4fa9beec05d300082a81",
+      "Id": "4f9f8ac5899642efbfb67ee6c95f8fc1"
+    },
+    {
+      "Start": "6a7cda13307c4919aeb313125918afa2",
+      "End": "5931186345a24f5dbd276f9098e34b42",
+      "Id": "a696165ce55a454d9bcab68ddd3babce"
+    },
+    {
+      "Start": "5516b276c6f84aaf927e168766cb87da",
+      "End": "83d812a6e8ab4af98411694999f96f29",
+      "Id": "4a747682fd784173a9680faea85ad1ff"
+    },
+    {
+      "Start": "5516b276c6f84aaf927e168766cb87da",
+      "End": "d2fc79206c75470d93018a75c52475ae",
+      "Id": "f5e0954bf4bc4350a50bbb70df1f2580"
+    },
+    {
+      "Start": "e152cc9bed2847ccab518ebfccc9e73e",
+      "End": "b2b0760b117e497aa1d352573c618955",
+      "Id": "dc76bf6e68e74d6d8e61f87d0dce63cf"
+    },
+    {
+      "Start": "e308782a466043859467fdbbec035b63",
+      "End": "3226ec6dbf6f40c9b9ade7b0945de213",
+      "Id": "bf995bf1687b47b080d0ed899da76dbe"
+    },
+    {
+      "Start": "d8d94d16f80640f2a72be9060613cb2e",
+      "End": "3a06151fd59041ae842b2e511cb509cd",
+      "Id": "3cc336edcd6b4dc6a3930d8fad3060b1"
+    },
+    {
+      "Start": "ae8f53a5956c48cea9edbbcc79fe4419",
+      "End": "b4e6ea9506d040959392fc7ade254dcf",
+      "Id": "65bafd9bc4494cfbb16b749bc6042382"
+    },
+    {
+      "Start": "dc0b9a974b2b48099e1e4b7b836bb7fe",
+      "End": "ce791bfbbc69475eaf6f8d72e17ac877",
+      "Id": "b999784e98d04024a51368fb7923343e"
+    }
+  ],
+  "Dependencies": [],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.1.0.7500",
+      "RunType": "Automatic",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "背景预览",
+      "EyeX": -17.0,
+      "EyeY": 24.0,
+      "EyeZ": 50.0,
+      "LookX": 12.0,
+      "LookY": -13.0,
+      "LookZ": -58.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "Color Palette",
+        "Id": "5064a1d56c6648d8bab7d0aa87a71127",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -134.06847528285903,
+        "Y": 205.90862032667968
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Color Range",
+        "Id": "5a14b537da2f4f8490bf9c2e2eb95511",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 625.27145599875121,
+        "Y": 306.4242034002263
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Color Palette",
+        "Id": "cac6231a796a49ffa6b63fcfea083b15",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -137.06847528285903,
+        "Y": 298.90862032667968
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "List Create",
+        "Id": "2383e789ccc54aeead8ded9298d73d96",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 62.931524717140974,
+        "Y": 241.40862032667968
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "fd8124600a284337912642d6bed12c55",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -122.56501596078033,
+        "Y": 448.43681115418127
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Sequence",
+        "Id": "0c812cc34abb4f8592268f30ee3fd055",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 7.9315247171409737,
+        "Y": 422.40862032667968
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "b715c0230d2b475d972a5387d35ffe72",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 289.431524717141,
+        "Y": 355.90862032667968
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "/",
+        "Id": "8c48b00a973749a7a586934b7af8e618",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 447.56583762336072,
+        "Y": 467.71281735546484
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "List.MaximumItem",
+        "Id": "b130125297c9479c889bbeda2ea07275",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 255.40403298083402,
+        "Y": 598.00085542417207
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Element.OverrideColorInView",
+        "Id": "724f39121aca4b938fe64f30dcfff50c",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1025.1249561764694,
+        "Y": 85.767502940244924
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "CurtainPanel.ByElement",
+        "Id": "d8a492eb6d0e4370862b636401c6797c",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 372.20933617217861,
+        "Y": -4.8366704723587759
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Select Model Element",
+        "Id": "51f7b01c3c4c42278eda93406236ce68",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 149.33107360384361,
+        "Y": 0.86952530367392455
+      }
+    ],
+    "Annotations": [
+      {
+        "Id": "3c30328bcbec41ff8e9f999db0560e7d",
+        "Title": "生成颜色数据",
+        "Nodes": [
+          "5064a1d56c6648d8bab7d0aa87a71127",
+          "5a14b537da2f4f8490bf9c2e2eb95511",
+          "cac6231a796a49ffa6b63fcfea083b15",
+          "2383e789ccc54aeead8ded9298d73d96",
+          "fd8124600a284337912642d6bed12c55",
+          "0c812cc34abb4f8592268f30ee3fd055",
+          "b715c0230d2b475d972a5387d35ffe72",
+          "8c48b00a973749a7a586934b7af8e618",
+          "b130125297c9479c889bbeda2ea07275"
+        ],
+        "Left": -147.06847528285903,
+        "Top": 152.70862032667969,
+        "Width": 1079.1399312816102,
+        "Height": 537.8922350974924,
+        "FontSize": 36.0,
+        "InitialTop": 205.90862032667968,
+        "InitialHeight": 529.5,
+        "TextblockHeight": 43.2,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "19fd3e076d6449b2a927cf600fa9b0d1",
+        "Title": "玻璃幕墙项目中选取",
+        "Nodes": [
+          "d8a492eb6d0e4370862b636401c6797c",
+          "51f7b01c3c4c42278eda93406236ce68"
+        ],
+        "Left": 139.33107360384361,
+        "Top": -58.036670472358779,
+        "Width": 542.078262568335,
+        "Height": 178.7061957760327,
+        "FontSize": 36.0,
+        "InitialTop": -4.8366704723587759,
+        "InitialHeight": 155.50619577603271,
+        "TextblockHeight": 43.2,
+        "Background": "#FFC1D676"
+      }
+    ],
+    "X": 143.80109595254009,
+    "Y": 91.417459987092684,
+    "Zoom": 0.63222489008344185
+  }
+}
